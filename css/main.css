@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Rubik;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 116px;
+}
+
+header .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+header .navigation .logo-box {
+  cursor: pointer;
+}
+header .navigation .logo-box .logo-res {
+  display: none;
+}
+header .navigation .button-box {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #70c05b;
+}
+header .navigation .button-box .menu-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+}
+header .navigation .button-box .menu-btn div {
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+header .navigation .button-box .menu-btn.active .line1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+header .navigation .button-box .menu-btn.active .line2 {
+  opacity: 0;
+}
+header .navigation .button-box .menu-btn.active .line3 {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+header .navigation .button-box .catalog-box p {
+  color: #fff;
+  font-size: 16px;
+}
+header .navigation .search-box {
+  border: 1px solid #70c05b;
+  display: flex;
+  align-items: center;
+}
+header .navigation .search-box input {
+  width: 250px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+header .navigation .search-box img {
+  padding-right: 8px;
+}
+header .navigation .servise-box {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+header .navigation .servise-box li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header .navigation .servise-box li img {
+  width: auto;
+  height: 25px;
+}
+header .navigation .select-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .navigation .select-box img {
+  cursor: pointer;
+}
+header .navigation .select-box select {
+  background-color: transparent;
+  border: none;
+}
+header .navigation .select-box select option {
+  font-family: Rubik;
+  margin-right: 20px;
+  color: #232323;
+}
+
+footer .foot-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  header .navigation {
+    gap: 20px;
+  }
+  header .navigation .logo-box .logo {
+    display: none;
+  }
+  header .navigation .logo-box .logo-res {
+    display: block;
+  }
+  header .navigation .button-box .catalog-box {
+    display: none;
+  }
+  header .navigation .search-box input {
+    width: 200px;
+  }
+  header .navigation .select-box select {
+    display: none;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  header .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+  }
+  header .navigation .logo-box {
+    cursor: pointer;
+  }
+  header .navigation .logo-box .logo-res {
+    display: block;
+  }
+  header .navigation .button-box {
+    display: none;
+  }
+  header .navigation .search-box {
+    border: 1px solid #70c05b;
+    display: flex;
+    align-items: center;
+  }
+  header .navigation .search-box input {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+  header .navigation .search-box img {
+    padding-right: 8px;
+  }
+  header .navigation .servise-box {
+    display: none;
+  }
+  header .navigation .select-box {
+    display: none;
+  }
+  footer .foot-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 0;
+  }
+  footer .foot-nav .search-box {
+    display: none;
+  }
+  footer .foot-nav .select-box {
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  footer .foot-nav .select-box select {
+    display: none;
+  }
+  footer .foot-nav .servise-box {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  footer .foot-nav .servise-box li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+  footer .foot-nav .servise-box li p {
+    font-size: 10px;
+  }
+  footer .foot-nav .servise-box li img {
+    width: auto;
+    height: 25px;
+  }
+  footer .foot-nav .button-box {
+    cursor: pointer;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  footer .foot-nav .button-box .menu-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  footer .foot-nav .button-box .menu-btn div {
+    width: 20px;
+    height: 1px;
+    background-color: #000;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  footer .foot-nav .button-box .menu-btn.active .line1 {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  footer .foot-nav .button-box .menu-btn.active .line2 {
+    opacity: 0;
+  }
+  footer .foot-nav .button-box .menu-btn.active .line3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  footer .foot-nav .button-box .catalog-box p {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
