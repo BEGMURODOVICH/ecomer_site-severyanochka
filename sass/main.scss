@@ -23,7 +23,7 @@ a {
 
 header {
   .nav-content {
-    position: fixed;
+    // position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -136,10 +136,10 @@ header {
     }
   }
   .hero {
-    position: fixed;
+    // position: fixed;
     right: 0;
     left: 0;
-    margin-top: 87px;
+    margin-top: 3px;
     background-color: #fff;
     background-image: url(/img/hero.svg);
     height: 200px;
@@ -156,6 +156,35 @@ header {
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
         color: #414141;
+      }
+    }
+  }
+}
+main {
+  .discount-section {
+    margin-top: 80px;
+    .section-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h2 {
+        font-family: Rubik;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 54px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #414141;
+      }
+      a {
+        color: #606060;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
       }
     }
   }
