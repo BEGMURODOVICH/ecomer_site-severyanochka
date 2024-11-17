@@ -152,15 +152,21 @@ header .hero .hero-content h1 {
   color: #414141;
 }
 
-main .discount-section {
-  margin-top: 80px;
+main .discount-section,
+main .newItem-section,
+main .purchased-section {
+  margin-top: 100px;
 }
-main .discount-section .section-title {
+main .discount-section .section-title,
+main .newItem-section .section-title,
+main .purchased-section .section-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-main .discount-section .section-title h2 {
+main .discount-section .section-title h2,
+main .newItem-section .section-title h2,
+main .purchased-section .section-title h2 {
   font-family: Rubik;
   font-size: 36px;
   font-weight: 700;
@@ -170,7 +176,9 @@ main .discount-section .section-title h2 {
   text-decoration-skip-ink: none;
   color: #414141;
 }
-main .discount-section .section-title a {
+main .discount-section .section-title a,
+main .newItem-section .section-title a,
+main .purchased-section .section-title a {
   color: #606060;
   font-family: Rubik;
   font-size: 16px;
@@ -178,6 +186,175 @@ main .discount-section .section-title a {
   line-height: 24px;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+}
+main .discount-section .discount-content,
+main .newItem-section .discount-content,
+main .purchased-section .discount-content {
+  margin-top: 40px;
+}
+main .discount-section .discount-content .product-list,
+main .newItem-section .discount-content .product-list,
+main .purchased-section .discount-content .product-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+main .discount-section .discount-content .product-list .product-item,
+main .newItem-section .discount-content .product-list .product-item,
+main .purchased-section .discount-content .product-list .product-item {
+  position: relative;
+  width: 272px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1019607843);
+}
+main .discount-section .discount-content .product-list .product-item .card:hover,
+main .newItem-section .discount-content .product-list .product-item .card:hover,
+main .purchased-section .discount-content .product-list .product-item .card:hover {
+  transform: translate(1px, -1px);
+  box-shadow: 4px 8px 16px 0px rgba(255, 102, 51, 0.2);
+  transition: all ease 0.3s;
+}
+main .discount-section .discount-content .product-list .product-item .card .like-btn,
+main .newItem-section .discount-content .product-list .product-item .card .like-btn,
+main .purchased-section .discount-content .product-list .product-item .card .like-btn {
+  z-index: 10;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+main .discount-section .discount-content .product-list .product-item .card .like-btn img,
+main .newItem-section .discount-content .product-list .product-item .card .like-btn img,
+main .purchased-section .discount-content .product-list .product-item .card .like-btn img {
+  background: #f3f2f1;
+  padding: 5px;
+  border-radius: 4px;
+}
+main .discount-section .discount-content .product-list .product-item .card .product-img,
+main .newItem-section .discount-content .product-list .product-item .card .product-img,
+main .purchased-section .discount-content .product-list .product-item .card .product-img {
+  margin-top: 8px;
+  position: relative;
+}
+main .discount-section .discount-content .product-list .product-item .card .discount-label,
+main .newItem-section .discount-content .product-list .product-item .card .discount-label,
+main .purchased-section .discount-content .product-list .product-item .card .discount-label {
+  position: absolute;
+  top: 130px;
+  right: 200px;
+  color: #fff;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background-color: #ff6633;
+  display: inline;
+  padding: 7px;
+  border-radius: 5px;
+}
+main .discount-section .discount-content .product-list .product-item .card .card-content,
+main .newItem-section .discount-content .product-list .product-item .card .card-content,
+main .purchased-section .discount-content .product-list .product-item .card .card-content {
+  padding: 8px;
+}
+main .discount-section .discount-content .product-list .product-item .card .price,
+main .newItem-section .discount-content .product-list .product-item .card .price,
+main .purchased-section .discount-content .product-list .product-item .card .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .discount-section .discount-content .product-list .product-item .card .price .card-price,
+main .newItem-section .discount-content .product-list .product-item .card .price .card-price,
+main .purchased-section .discount-content .product-list .product-item .card .price .card-price {
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #414141;
+}
+main .discount-section .discount-content .product-list .product-item .card .price .old-price,
+main .newItem-section .discount-content .product-list .product-item .card .price .old-price,
+main .purchased-section .discount-content .product-list .product-item .card .price .old-price {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #606060;
+}
+main .discount-section .discount-content .product-list .product-item .card .servis,
+main .newItem-section .discount-content .product-list .product-item .card .servis,
+main .purchased-section .discount-content .product-list .product-item .card .servis {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .discount-section .discount-content .product-list .product-item .card .servis span,
+main .newItem-section .discount-content .product-list .product-item .card .servis span,
+main .purchased-section .discount-content .product-list .product-item .card .servis span {
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #bfbfbf;
+}
+main .discount-section .discount-content .product-list .product-item .card .description,
+main .newItem-section .discount-content .product-list .product-item .card .description,
+main .purchased-section .discount-content .product-list .product-item .card .description {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #414141;
+}
+main .discount-section .discount-content .product-list .product-item .card .rating,
+main .newItem-section .discount-content .product-list .product-item .card .rating,
+main .purchased-section .discount-content .product-list .product-item .card .rating {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+main .discount-section .discount-content .product-list .product-item .card .add-to-cart,
+main .newItem-section .discount-content .product-list .product-item .card .add-to-cart,
+main .purchased-section .discount-content .product-list .product-item .card .add-to-cart {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  height: 40px;
+  width: 100%;
+  color: #70c05b;
+  background-color: transparent;
+  border: 1px solid #70c05b;
+  border-radius: 4px;
+}
+main .discount-section .discount-content .product-list .product-item .card .add-to-cart:hover,
+main .newItem-section .discount-content .product-list .product-item .card .add-to-cart:hover,
+main .purchased-section .discount-content .product-list .product-item .card .add-to-cart:hover {
+  background: #ff6633;
+  color: #fff;
+  transition: ease all 0.5s;
+  border: 1px solid #ff6633;
 }
 
 footer .foot-nav {
@@ -208,12 +385,38 @@ footer .foot-nav {
   header .nav-content .navigation .select-box select {
     display: none;
   }
+  header .hero .hero-content h1 {
+    font-size: 35px;
+  }
+  main .discount-section,
+  main .newItem-section,
+  main .purchased-section {
+    margin-top: 100px;
+  }
+  main .discount-section .discount-content .product-list,
+  main .newItem-section .discount-content .product-list,
+  main .purchased-section .discount-content .product-list {
+    overflow: hidden;
+    gap: 10px;
+  }
+  main .discount-section .discount-content .product-list .product-item .card .product-img,
+  main .newItem-section .discount-content .product-list .product-item .card .product-img,
+  main .purchased-section .discount-content .product-list .product-item .card .product-img {
+    width: 235px;
+  }
+  main .discount-section .discount-content .product-list .product-item .card .discount-label,
+  main .newItem-section .discount-content .product-list .product-item .card .discount-label,
+  main .purchased-section .discount-content .product-list .product-item .card .discount-label {
+    position: absolute;
+    top: 110px;
+    right: 165px;
+  }
 }
 @media (max-width: 360px) {
   .container {
     max-width: 360px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 10px;
   }
   header .nav-content .navigation {
     display: flex;
@@ -249,6 +452,70 @@ footer .foot-nav {
   }
   header .nav-content .navigation .select-box {
     display: none;
+  }
+  header .hero {
+    height: 100px;
+  }
+  header .hero .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .hero .hero-content img {
+    display: none;
+  }
+  header .hero .hero-content h1 {
+    font-size: 20px;
+    line-height: 100px;
+  }
+  main .discount-section,
+  main .newItem-section,
+  main .purchased-section {
+    margin-top: 20px;
+  }
+  main .discount-section .section-title h2,
+  main .newItem-section .section-title h2,
+  main .purchased-section .section-title h2 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  main .discount-section .discount-content,
+  main .newItem-section .discount-content,
+  main .purchased-section .discount-content {
+    margin-top: 40px;
+  }
+  main .discount-section .discount-content .product-list,
+  main .newItem-section .discount-content .product-list,
+  main .purchased-section .discount-content .product-list {
+    overflow: hidden;
+    gap: 15px;
+  }
+  main .discount-section .discount-content .product-list .product-item .card .like-btn,
+  main .newItem-section .discount-content .product-list .product-item .card .like-btn,
+  main .purchased-section .discount-content .product-list .product-item .card .like-btn {
+    z-index: 10;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  main .discount-section .discount-content .product-list .product-item .card .product-img,
+  main .newItem-section .discount-content .product-list .product-item .card .product-img,
+  main .purchased-section .discount-content .product-list .product-item .card .product-img {
+    width: 160px;
+    margin-top: 8px;
+    position: relative;
+  }
+  main .discount-section .discount-content .product-list .product-item .card .discount-label,
+  main .newItem-section .discount-content .product-list .product-item .card .discount-label,
+  main .purchased-section .discount-content .product-list .product-item .card .discount-label {
+    position: absolute;
+    top: 70px;
+    right: 280px;
+    color: #fff;
+    font-size: 16px;
+    display: inline;
+    padding: 3px;
+    border-radius: 5px;
   }
   footer .foot-nav-content {
     position: fixed;
