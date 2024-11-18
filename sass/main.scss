@@ -22,8 +22,47 @@ a {
 }
 
 header {
+  .catalog-modal-active {
+    z-index: 90;
+    transform: translateY(254px);
+    transition: all ease 0.5s;
+    position: fixed;
+  }
+  .catolog-modal {
+    // border-top: 1px solid #fcd5ba;
+    width: 100%;
+    height: 250px;
+    background-color: #fff;
+    transition: all ease 0.5s;
+    top: -170px;
+    position: fixed;
+    .modal-content {
+      padding-top: 25px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      row-gap: 30px;
+      li {
+        a {
+          font-family: Rubik;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          color: #414141;
+        }
+        a:hover {
+          color: #ff6633;
+        }
+      }
+    }
+  }
+
   .nav-content {
-    // position: fixed;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -80,7 +119,7 @@ header {
           transform: rotate(-45deg) translate(5px, -5px);
         }
         .catalog-box {
-          p {
+          a {
             color: #fff;
             font-size: 16px;
           }
@@ -137,9 +176,10 @@ header {
   }
   .hero {
     // position: fixed;
+    top: 80px;
     right: 0;
     left: 0;
-    margin-top: 3px;
+    margin-top: 85px;
     background-color: #fff;
     background-image: url(/img/hero.svg);
     height: 200px;
@@ -394,11 +434,11 @@ main {
       }
     }
   }
-  .location-section {
+  .adress-section {
     margin-bottom: 120px;
     h2 {
     }
-    .location-content {
+    .adress-content {
       margin-top: 40px;
       .map-btn {
         margin-bottom: 24px;
@@ -426,7 +466,7 @@ main {
     }
   }
   .articles-section {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     h2 {
       font-family: Rubik;
       font-size: 36px;
@@ -507,8 +547,113 @@ main {
       }
     }
   }
+
+  // company.html
+  .location-section {
+    margin-top: 120px;
+    .location-content {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      a {
+        font-family: Rubik;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #8f8f8f;
+      }
+    }
+  }
+  .company-section {
+    margin-bottom: 100px;
+    .company-content {
+      padding-top: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-image: url(/img/com-vek.svg);
+      background-repeat: no-repeat;
+      background-size: 669px;
+      background-position: 550px 0px;
+      .txt-content {
+        h1 {
+          font-family: Rubik;
+          font-size: 64px;
+          font-weight: 700;
+          line-height: 96px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          color: #414141;
+        }
+        p {
+          font-family: Rubik;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 36px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          color: #ff6633;
+        }
+      }
+    }
+  }
+  .description-section {
+    margin-bottom: 100px;
+    .features {
+      ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+
+        gap: 20px;
+        li {
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+          // background-color: #fff9f0;
+          padding: 20px;
+          border-radius: 8px;
+          width: 300px;
+          h3 {
+            font-size: 1rem;
+            margin: 0;
+          }
+          p {
+            margin: 4px 0 0;
+            font-size: 0.9rem;
+          }
+          img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+  .smile-section {
+    margin-bottom: 100px;
+    .smile-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+    }
+  }
 }
 footer {
+  padding: 20px 0 0;
+  // position: fixed;
+  bottom: 0px;
+  left: 45px;
+  background-image: url(/img/bg-footer.svg);
+  background-size: cover;
   margin-bottom: 25px;
   .foot {
     display: flex;
