@@ -149,6 +149,13 @@ header {
             width: auto;
             height: 25px;
           }
+          a {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+            color: #414141;
+          }
         }
         cursor: pointer;
         display: flex;
@@ -179,7 +186,7 @@ header {
     top: 80px;
     right: 0;
     left: 0;
-    margin-top: 85px;
+    margin-top: 95px;
     background-color: #fff;
     background-image: url(/img/hero.svg);
     height: 200px;
@@ -442,12 +449,12 @@ main {
     }
     .adress-content {
       margin-top: 40px;
-      .map-btn {
+      .map-buttons {
         margin-bottom: 24px;
         display: flex;
         align-items: center;
         gap: 25px;
-        .btn {
+        button {
           font-family: Rubik;
           font-size: 12px;
           font-weight: 400;
@@ -464,6 +471,10 @@ main {
           color: #fff;
           background-color: #70c05b;
         }
+      }
+      .map-container {
+        width: 100%;
+        height: 354px;
       }
     }
   }
@@ -705,9 +716,6 @@ main {
 
     .catolog-content img:hover {
       transform: scale(1.05);
-    }
-    .catolog-content img:nth-child(1) {
-      grid-column: span 1;
     }
   }
   // product.html
@@ -1490,6 +1498,65 @@ main {
             align-items: center;
             gap: 8px;
           }
+        }
+      }
+    }
+  }
+  // vacancies.html
+  .vacancies-section {
+    margin-bottom: 80px;
+    h1 {
+      color: #414141;
+      font-family: Rubik;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 96px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+    .vacancies-content {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      li:hover {
+        box-shadow: 4px 8px 16px 0px #ff663333;
+      }
+      li {
+        max-width: 376px;
+        background-color: #fff;
+        padding: 32px;
+        h3 {
+          margin-bottom: 16px;
+        }
+        .desc-title {
+          margin-bottom: 10px;
+          color: #414141;
+          font-family: Rubik;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 27px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+        }
+        .desc {
+          color: #414141;
+          font-family: Rubik;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 27px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          color: #414141;
+          text-decoration: underline;
         }
       }
     }
